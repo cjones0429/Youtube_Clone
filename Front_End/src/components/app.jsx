@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
+=======
+import SearchBar from './SearchBar/searchBar';
+>>>>>>> parent of b2709e5 (changed app.jsx import for searchbar to match)
 
 class App extends Component {
     constructor(props) {
