@@ -24,7 +24,7 @@ class SearchBar extends Component {
             <div>
                 <form onSubmit={() => this.handleSubmit()}>
                     <label>Search for Videos:</label>
-                    <input type="text" name="searchQuery" value={this.state.searchQuery} onChange={() => this.handleChange()} />
+                    <input type="text" name="name" value={this.searchQuery} onChange={() => this.handleChange()} />
                 </form>
             </div>
         );
