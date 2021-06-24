@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import SearchBar from './SearchBar2/searchBar2';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            videoId: '2RQh0BOoBbQ',
-            title: '',
-            description: '',
-            related_videos: [],
+            videoId: '2RQh0BOoBbQ'
          }
     }
 
@@ -31,10 +27,6 @@ class App extends Component {
                 <center>
                     <h1>YouTube Clone</h1>
                 </center>
-                <br/>
-                <div>
-                    <SearchBar searchForVideo={this.searchForVideo}/>
-                </div>
                 <br/>
                 <iframe id="ytplayer" type="text/html" width="640" height="360"
                 src={`https://www.youtube.com/embed/${this.state.videoId}?autoplay=1&origin=http://example.com`}
