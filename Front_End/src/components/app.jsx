@@ -15,8 +15,7 @@ class App extends Component {
 
     searchForVideo = async (searchQuery) => {
         let response = await axios.get(`http://www.googleapis.com/youtube/v3/search?q=${searchQuery}&key=AIzaSyC_TUmTIqQx4r4y8Y16DpOQNoxRkNuIkl4`)
-        let videos = response.data;
-        console.log(response.data)
+        let videos = response.date;
         this.setState({
             videoId: videos.items[0].id.videoId
         })
